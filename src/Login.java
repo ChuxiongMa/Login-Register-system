@@ -30,7 +30,7 @@ public class Login {
 	public void connect(){
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/login?useUnicode=true&characterEncoding=utf-8&useSSL=false","root","qazZAQ360921,.");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/login?useUnicode=true&characterEncoding=utf-8&useSSL=false","root","password");
 			st = con.createStatement();
 			
 		}catch(Exception e){
